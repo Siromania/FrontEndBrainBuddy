@@ -1,0 +1,30 @@
+
+{
+    "history": [
+      {
+        "timestamp": 2015,
+        "score": 5000,
+        "colorcode": "green"
+      },
+      {
+        "timestamp": 2016,
+        "score": 4000,
+        "colorcode": "red"
+      },
+      {
+        "timestamp": 2017,
+        "score": 500,
+        "colorcode": "yellow"
+      },
+      {
+        "timestamp": 2018,
+        "score": 4500,
+        "colorcode": "blue"
+      },
+      {
+        "timestamp": 2019,
+        "score": 6000,
+        "colorcode": "purple"
+      }
+    ]
+  }
