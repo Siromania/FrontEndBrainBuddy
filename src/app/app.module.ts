@@ -15,6 +15,9 @@ import { ProfilemenuComponent } from './components/profilemenu/profilemenu.compo
 import { DonneepersoComponent } from './components/donneeperso/donneeperso.component';
 import { HistoriqueComponent } from './components/historique/historique.component';
 import { TrophesComponent } from './components/trophes/trophes.component';
+import { MonkeyTestGameComponent } from './components/monkey-test-game/monkey-test-game.component';
+import { MonkeyTestGridComponent } from './components/monkey-test-grid/monkey-test-grid.component';
+import { MonkeyTestBlockComponent } from './components/monkey-test-block/monkey-test-block.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +32,10 @@ import { TrophesComponent } from './components/trophes/trophes.component';
           HistoriqueComponent,
           TrophesComponent,
     MonkeyTestTutorielComponent,
-    ConnexionComponent
+    ConnexionComponent,
+    MonkeyTestGameComponent,
+    MonkeyTestGridComponent,
+    MonkeyTestBlockComponent
   ],
   imports: [
     BrowserModule,

@@ -7,6 +7,7 @@ import { ProfileComponent } from './components/profile/profile.component';
 import { DonneepersoComponent } from './components/donneeperso/donneeperso.component';
 import { HistoriqueComponent } from './components/historique/historique.component';
 import { TrophesComponent } from './components/trophes/trophes.component';
+import { MonkeyTestGameComponent } from './components/monkey-test-game/monkey-test-game.component';
 
 const routes: Routes = [
   {
@@ -20,6 +21,10 @@ const routes: Routes = [
   {
     path: "connexion",
     component: ConnexionComponent
+  },
+  {
+    path: "monkeytestgame",
+    component: MonkeyTestGameComponent
   },
   {
     path: "profile",
