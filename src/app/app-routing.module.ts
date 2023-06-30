@@ -7,6 +7,7 @@ import { ProfileComponent } from './components/profile/profile.component';
 import { DonneepersoComponent } from './components/donneeperso/donneeperso.component';
 import { HistoriqueComponent } from './components/historique/historique.component';
 import { TrophesComponent } from './components/trophes/trophes.component';
+import { LeaderboardComponent } from './components/leaderboard/leaderboard.component';
 
 const routes: Routes = [
   {
@@ -20,6 +21,10 @@ const routes: Routes = [
   {
     path: "connexion",
     component: ConnexionComponent
+  },
+  {
+    path: "leaderboard",
+    component: LeaderboardComponent
   },
   {
     path: "profile",

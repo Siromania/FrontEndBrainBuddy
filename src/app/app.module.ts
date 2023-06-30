@@ -15,6 +15,9 @@ import { ProfilemenuComponent } from './components/profilemenu/profilemenu.compo
 import { DonneepersoComponent } from './components/donneeperso/donneeperso.component';
 import { HistoriqueComponent } from './components/historique/historique.component';
 import { TrophesComponent } from './components/trophes/trophes.component';
+import { LeaderboardComponent } from './components/leaderboard/leaderboard.component';
+import { NgChartsModule } from 'ng2-charts';
+import { LineChartComponent } from './components/line-chart/line-chart.component';
 
 @NgModule({
   declarations: [
@@ -25,17 +28,20 @@ import { TrophesComponent } from './components/trophes/trophes.component';
     ProfileComponent,
     
     ProfilemenuComponent,
-          DonneepersoComponent,
-          HistoriqueComponent,
-          TrophesComponent,
+    DonneepersoComponent,
+    HistoriqueComponent,
+    TrophesComponent,
     MonkeyTestTutorielComponent,
-    ConnexionComponent
+    ConnexionComponent,
+    LeaderboardComponent,
+    LineChartComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    NgChartsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

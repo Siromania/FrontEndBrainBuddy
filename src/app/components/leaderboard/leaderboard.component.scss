@@ -1,0 +1,21 @@
+.menuGames {
+    display: flex;
+    flex-direction: column;
+    // justify-content: space-between;
+    row-gap: 50px;
+    background-color: #a2c0d2;
+    height: 800px;
+    border-radius: 10px;
+    width: 110px;
+    margin-top: 5%;
+  }
+.leaderboard {
+    display: flex;
+    flex-direction: row;
+    margin-left: 10%;
+}
+
+.charts{
+    margin-left: 150px;
+    margin-top: 5%;
+}
