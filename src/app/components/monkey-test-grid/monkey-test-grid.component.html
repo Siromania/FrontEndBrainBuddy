@@ -1,8 +1,8 @@
 
 <div id="container">
     <div *ngFor="let row of listRow" class="row">
-        <div *ngFor="let column of listColumn" class="column">
-            <app-monkey-test-block [x]="row" [y]="column"></app-monkey-test-block>
+        <div *ngFor="let column of listColumn" class="column" value="row">
+            <app-monkey-test-block ng-if="row " (onSelectValue)='selectValue($event)' [x]="row" [y]="column"></app-monkey-test-block>
         </div>
     </div>
 </div>
