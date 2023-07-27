@@ -16,7 +16,7 @@ export class MonkeyTestBlockComponent {
   // }
 
   @HostListener('click', ['$event.target']) onClick() {
-    console.log("x="+this.x+" y="+this.y);
+    console.log("x="+this.x+" y=" + this.y);
     this.onSelectValue.emit( {xValue: this.x, yValue:this.y} );
   }
 

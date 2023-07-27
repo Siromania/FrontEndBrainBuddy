@@ -34,14 +34,33 @@ export class MonkeyTestGridComponent implements OnInit {
   }
 
   selectValue( newValue : any ) {
-    console.log(newValue);
+   // console.log(newValue);
     console.log(this.listRandom[0][0]);
     for(let i = 0;i<this.listRandom.length;++i){
       if(newValue.xValue === this.listRandom[i][0].x && newValue.yValue === this.listRandom[i][0].y){
         console.log("right");
+        console.log(newValue);
+        this.nextRound();
       }
     }
   }
+
+  addComponent(componentClass: Type<any>) {
+    // Create component dynamically inside the ng-template
+    const componentFactory = this.componentFactoryResolver.resolveComponentFactory(componentClass);
+    const component = this.container.createComponent(componentFactory);
+
+    // Push the component so that we can keep track of which components are created
+    this.components.push(component);
+  }
+
+  nextRound(){
+
+    ++this.currentRound;
+
+
+  }
+
 
 
 
