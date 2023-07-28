@@ -50,10 +50,14 @@ img, svg {
      margin-top: -2%;
 
 }
+.col-3{
+    text-align: center;
+}
 
 .col-md-3 {
     flex: 0 0 auto;
     width : 30%;
+    text-align: center;
 }
 @media screen and (max-width: 900px) {
   

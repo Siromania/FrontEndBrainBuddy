@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import {  HttpClientModule } from '@angular/common/http';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -16,7 +17,7 @@ import { DonneepersoComponent } from './components/donneeperso/donneeperso.compo
 import { HistoriqueComponent } from './components/historique/historique.component';
 import { TrophesComponent } from './components/trophes/trophes.component';
 import { JeuxComponent } from './components/jeux/jeux.component';
-import { ViewGraphComponent } from './components/view-graph/view-graph.component' ;
+import { ViewGraphComponent } from './view-graph/view-graph.component' ;
 
 
 
@@ -43,7 +44,8 @@ import { ViewGraphComponent } from './components/view-graph/view-graph.component
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

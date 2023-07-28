@@ -12,7 +12,7 @@ export class ViewGraphComponent {
       height: 700
     },
     title: {
-      text: 'Reaction Time Statistics'
+      text: 'Répartitions'
     },
     credits: {
       enabled: false
@@ -36,4 +36,5 @@ export class ViewGraphComponent {
   ngOnInit() {
     Highcharts.chart('container', this.options);
   }
+  
 }
