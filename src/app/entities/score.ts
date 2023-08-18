@@ -1,7 +1,10 @@
 import { Game } from "./game";
+import { User } from "./user";
 
 export interface Score {
-    games: Game,
     timeStamp: Date;
-    level: number
+    level: number;
+    timer: number;
+    user: User;
+    game: Game;
 }

@@ -23,7 +23,7 @@ export class HistoriqueComponent {
           console.log(res);
          res.forEach(element => {
             
-            let historique = {nom: element.games?.name, date: element.timeStamp, meilleurscore: element.level};
+            let historique = {nom: element.game?.name, date: element.timeStamp, meilleurscore: element.level};
             this.historique.push(historique);
 
          });

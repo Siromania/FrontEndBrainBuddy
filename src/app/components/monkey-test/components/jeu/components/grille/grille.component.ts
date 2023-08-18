@@ -1,4 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { FormBuilder, FormGroup } from '@angular/forms';
+import { Router } from '@angular/router';
+import { ScoresService } from 'src/app/services/scores/scores.service';
 
 @Component({
   selector: 'app-grille',
@@ -28,8 +31,18 @@ export class GrilleComponent implements OnInit {
   timer: number = 0; // Set the initial countup value (in seconds)
   interval: any;
 
+  public scoreForm !: FormGroup
+
+  constructor(private scoresService: ScoresService, private formBuilder: FormBuilder, private router: Router) {
+	  
+  }
+
   // Lancement du jeu
   ngOnInit() {
+    this.scoreForm = this.formBuilder.group({
+      userName: ['', Validators.required],
+      password: ['', Validators.required],
+    });
     this.generateGrid();
     this.timer = 0;
     this.startCountup();
