@@ -78,10 +78,6 @@ export class GrilleComponent implements OnInit {
     }, 1000); // Increment the countup every 1 second (1000 ms)
   }
 
-  // Stop Timer
-    
-  
-
   // Génére un nombre aléatoire entre 1 et la taille de la grille (this.draw) du jeu 
   randomIntFromInterval() {
     return Math.floor(Math.random() * this.draw + 1)
@@ -146,10 +142,7 @@ export class GrilleComponent implements OnInit {
     const gamescreen = document.getElementById("game-screen") as HTMLElement;
     this.switchHiddenState(lifelostscreen);
     this.switchHiddenState(gamescreen);
-    this.gamereboot();
-    // this.flipCards();
-    // this.timer=0;
-    // this.generateGrid();
+    this.gameReboot();
   }
 
   // enlève la classe css "cliquée"
@@ -159,7 +152,8 @@ export class GrilleComponent implements OnInit {
     }
   }
 
-  gamereboot() {
+  gameReboot(): void {
+    // active le verso des cartes utilisées lors de la manche précédente
     this.flipCards();
     this.timer=0;
     this.generateGrid();
@@ -172,10 +166,6 @@ export class GrilleComponent implements OnInit {
     this.switchHiddenState(scorescreen);
     this.switchHiddenState(gamescreen);
     this.level++;
-    this.gamereboot();
-    //// active le verso des cartes utilisées lors de la manche précédente
-    // this.flipCards();
-    // this.timer=0;
-    // this.generateGrid();
+    this.gameReboot();
   }
 }
