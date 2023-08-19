@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup } from '@angular/forms';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { ScoresService } from 'src/app/services/scores/scores.service';
 
@@ -39,9 +39,13 @@ export class GrilleComponent implements OnInit {
 
   // Lancement du jeu
   ngOnInit() {
+    // Poster le score
     this.scoreForm = this.formBuilder.group({
-      userName: ['', Validators.required],
-      password: ['', Validators.required],
+      timeStamp: ['', Validators.required],
+      level: ['', Validators.required],
+      timer: ['', Validators.required],
+      user: ['', Validators.required],
+      game: ['', Validators.required],
     });
     this.generateGrid();
     this.timer = 0;
